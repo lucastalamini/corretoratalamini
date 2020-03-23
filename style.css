@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #1a5276;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #5dade2;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+/* Navbar */
+
+#navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #1a5276;
+  border-radius: 5px;
+}
+
+#showcase {
+  background: url("./img/background-img.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+}
+
+#showcase .showcase-content p {
+  padding: 2rem 5rem;
+}
+
+#showcase .showcase-content .btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  color: #fff;
+  background: #1a5276;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#showcase .showcase-content .btn:hover {
+  transform: scale(1.2);
+  background: #5dade2;
+}
+
+#showcase .overlay {
+  /* Overlay */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Section A: About */
+
+#about .insurances {
+  display: flex;
+  padding: 1rem;
+}
+
+#about .insurances .insurance {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#about .insurances .insurance h3 {
+  padding: 0.5rem;
+}
+
+#about .insurances .insurance i {
+  background: #1a5276;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+#about .insurances .insurance i:hover {
+  transform: scale(1.2);
+  background: #f4f4f4;
+  color: #1a5276;
+}
+
+/* Section B: Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact ul li {
+  display: flex;
+  justify-content: right;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#contact ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+/* Footer */
+
+#main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  #navbar h1 {
+    font-size: 0.8rem;
+  }
+
+  #about .insurances {
+    flex-direction: column;
+  }
+
+  #contact ul li {
+    font-size: 1rem;
+  }
+}
